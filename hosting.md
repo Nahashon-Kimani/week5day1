@@ -34,5 +34,12 @@
 - Your index.php should load.
 
 
-## Step 9 - Clean up
-- Go to **cleanup.md** to clean up the AWS Environment. 
+## Step 9 - Creating an AMI
+- Go to the AWS EC2 Dashboard.
+- Select your running EC2 instance.
+- Click on "Actions" > "Image and templates" > "Create image".
+- Enter a name and description for your AMI.
+- (Optional) Choose whether to reboot the instance.
+- Click "Create image".
+- Your AMI will appear under the "AMIs" section once the process is complete.
+- Add tags (e.g. Key: Name, Value: PHPWebsite)

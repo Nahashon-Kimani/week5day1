@@ -158,9 +158,9 @@ $users = $pdo->query('SELECT id, name, email FROM users ORDER BY id ASC')->fetch
             <td colspan="2">
                 <?php
                 // Retrieve instance metadata from EC2 Metadata Service
-                $instance_id = @file_get_contents('http://169.254.169.254/latest/meta-data/instance-id');
-                $public_ip = @file_get_contents('http://169.254.169.254/latest/meta-data/public-ipv4');
-                $availability_zone = @file_get_contents('http://169.254.169.254/latest/meta-data/placement/availability-zone');
+                $instance_id = @file_get_contents('http://54.173.248.133/latest/meta-data/instance-id');
+                $public_ip = @file_get_contents('http://54.173.248.133/latest/meta-data/public-ipv4');
+                $availability_zone = @file_get_contents('http://54.173.248.133/latest/meta-data/placement/availability-zone');
                 
                 if ($instance_id && $public_ip && $availability_zone) {
                     echo "Instance ID: " . htmlspecialchars($instance_id) . "<br>";
